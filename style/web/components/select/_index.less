@@ -424,6 +424,27 @@
   font: @select-font-s;
 }
 
+// multiple option
+.@{prefix}-select-option.@{prefix}-select-option__multiple {
+  padding: 0;
+
+  .@{prefix}-checkbox {
+    padding: @select-option-padding-default;
+  }
+
+  &.@{prefix}-size-s {
+    .@{prefix}-checkbox {
+      padding: @select-option-padding-s;
+    }
+  }
+
+  &.@{prefix}-size-l {
+    .@{prefix}-checkbox {
+      padding: @select-option-padding-l;
+    }
+  }
+}
+
 .@{prefix}-select-option.@{prefix}-is-selected {
   color: @select-selected-color;
   background-color: @select-selected-bg-color;
